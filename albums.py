@@ -45,17 +45,3 @@ class Albums(object):
         self.df['Normalized Genre'] = self.df['Normalized Genre'].map(
             lambda x: [i.strip() for i in x.split(',')])
         return self.df
-
-
-# it might make sense to not be a class
-
-# albums = Albums()
-# albums.df.to_csv('etl/csvs/album_frame.csv')
-# year = albums.group_by_attribute('Year')
-# decade = albums.group_by_attribute('Decade')
-# artist = albums.albums_by_artist()
-# genre = albums.genres_by_years()
-# frames = {'year': year,
-#           'decade': decade, 'artist': artist, 'genre': genre}
-# for key, value in frames.items():
-#     value.to_csv('etl/csvs/{0}.csv'.format(key))
