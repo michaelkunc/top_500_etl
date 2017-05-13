@@ -4,7 +4,7 @@ import pandas as pd
 class Albums(object):
 
     def __init__(self):
-        self.df = pd.read_csv('etl/csvs/albumlist.csv', encoding="ISO-8859-1")
+        self.df = pd.read_csv('csvs/albumlist.csv', encoding="ISO-8859-1")
         self.df['Decade'] = self.df.apply(
             lambda row: self._add_decade(row), axis=1)
         self.df = self._normalize_genre()
