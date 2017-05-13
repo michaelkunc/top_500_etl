@@ -1,5 +1,5 @@
 import unittest
-from etl import albums
+import albums
 
 
 class Album_Test(unittest.TestCase):
