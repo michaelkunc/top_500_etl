@@ -1,0 +1,13 @@
+[2017-05-14 09:04:45,044] {models.py:167} INFO - Filling up the DagBag from /Users/michaelkunc/Development/top_500_etl/airflow/dags/albums_write.py
+[2017-05-14 09:04:45,659] {base_task_runner.py:112} INFO - Running: ['bash', '-c', 'airflow run albums write_local 2017-05-14T00:00:00 --job_id 3 --raw -sd DAGS_FOLDER//Users/michaelkunc/Development/top_500_etl/albums_write.py']
+[2017-05-14 09:04:46,147] {base_task_runner.py:95} INFO - Subtask: [2017-05-14 09:04:46,147] {__init__.py:57} INFO - Using executor SequentialExecutor
+[2017-05-14 09:04:46,389] {base_task_runner.py:95} INFO - Subtask: [2017-05-14 09:04:46,389] {models.py:167} INFO - Filling up the DagBag from /Users/michaelkunc/Development/top_500_etl/airflow/dags/Users/michaelkunc/Development/top_500_etl/albums_write.py
+[2017-05-14 09:04:46,743] {base_task_runner.py:95} INFO - Subtask: Traceback (most recent call last):
+[2017-05-14 09:04:46,743] {base_task_runner.py:95} INFO - Subtask:   File "/Users/michaelkunc/.virtualenvs/top_500/bin/airflow", line 28, in <module>
+[2017-05-14 09:04:46,743] {base_task_runner.py:95} INFO - Subtask:     args.func(args)
+[2017-05-14 09:04:46,743] {base_task_runner.py:95} INFO - Subtask:   File "/Users/michaelkunc/.virtualenvs/top_500/lib/python3.5/site-packages/airflow/bin/cli.py", line 388, in run
+[2017-05-14 09:04:46,743] {base_task_runner.py:95} INFO - Subtask:     dag = get_dag(args)
+[2017-05-14 09:04:46,744] {base_task_runner.py:95} INFO - Subtask:   File "/Users/michaelkunc/.virtualenvs/top_500/lib/python3.5/site-packages/airflow/bin/cli.py", line 126, in get_dag
+[2017-05-14 09:04:46,744] {base_task_runner.py:95} INFO - Subtask:     'parse.'.format(args.dag_id))
+[2017-05-14 09:04:46,744] {base_task_runner.py:95} INFO - Subtask: airflow.exceptions.AirflowException: dag_id could not be found: albums. Either the dag did not exist or it failed to parse.
+[2017-05-14 09:04:50,666] {jobs.py:2083} INFO - Task exited with return code 1
