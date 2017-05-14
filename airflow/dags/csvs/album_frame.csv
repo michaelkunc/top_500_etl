@@ -120,7 +120,7 @@
 118,119,1960,At Last!,Etta James,"Funk / Soul, Blues","Rhythm & Blues, Soul",1950's,"['Funk', 'Soul', 'Blues']"
 119,120,1968,Sweetheart of the Rodeo,The Byrds,Rock,"Folk Rock, Country Rock",1960's,['Rock']
 120,121,1969,Stand!,Sly & The Family Stone,Funk / Soul,"Funk, Psychedelic, Disco",1960's,"['Funk', 'Soul']"
-121,122,1972,The Harder They Come,Various Artists,"Reggae,ÊPop,ÊFolk, World, & Country,ÊStage & Screen","Reggae,ÊRoots Reggae,ÊRocksteady,ÊContemporary,ÊSoundtrack",1970's,"['Reggae', 'ÊPop', 'ÊFolk', 'World', 'Country', 'ÊStageScreen']"
+121,122,1972,The Harder They Come,Various Artists,"Reggae,ÃPop,ÃFolk, World, & Country,ÃStage & Screen","Reggae,ÃRoots Reggae,ÃRocksteady,ÃContemporary,ÃSoundtrack",1970's,"['Reggae', 'Ã\x8aPop', 'Ã\x8aFolk', 'World', 'Country', 'Ã\x8aStageScreen']"
 122,123,1986,Raising Hell,Run D.M.C.,Hip Hop,None,1980's,['Hip Hop']
 123,124,1967,Moby Grape,Moby Grape,Rock,"Folk Rock, Psychedelic Rock",1960's,['Rock']
 124,125,1971,Pearl,Janis Joplin,"Rock, Blues",Blues Rock,1970's,"['Rock', 'Blues']"
@@ -130,7 +130,7 @@
 128,129,1980,Remain in Light,Talking Heads,"Electronic, Rock","New Wave, Art Rock, Funk",1970's,"['Electronic', 'Rock']"
 129,130,1977,Marquee Moon,Television,Rock,"New Wave, Punk",1970's,['Rock']
 130,131,1970,Paranoid,Black Sabbath,Rock,"Hard Rock, Heavy Metal",1960's,['Rock']
-131,132,1977,Saturday Night Fever: The Original Movie Sound Track,Various Artists,"Electronic,ÊStage & Screen","Soundtrack,ÊDisco",1970's,"['Electronic', 'ÊStageScreen']"
+131,132,1977,Saturday Night Fever: The Original Movie Sound Track,Various Artists,"Electronic,ÃStage & Screen","Soundtrack,ÃDisco",1970's,"['Electronic', 'Ã\x8aStageScreen']"
 132,133,1973,"The Wild, the Innocent & the E Street Shuffle",Bruce Springsteen,Rock,None,1970's,['Rock']
 133,134,1994,Ready to Die,The Notorious B.I.G.,Hip Hop,Thug Rap,1990's,['Hip Hop']
 134,135,1992,Slanted and Enchanted,Pavement,Rock,Alternative Rock,1990's,['Rock']
@@ -193,8 +193,8 @@
 191,192,1969,The Gilded Palace of Sin,The Flying Burrito Brothers,"Rock, Folk, World, & Country",Country Rock,1960's,"['Rock', 'Folk', 'World', 'Country']"
 192,193,1994,Dookie,Green Day,Rock,"Alternative Rock, Pop Punk, Punk",1990's,['Rock']
 193,194,1972,Transformer,Lou Reed,Rock,Glam,1970's,['Rock']
-194,195,1966,"Blues Breakers With Eric Clapton (""The Beano Album"")",John Mayall & The Bluesbreakers,"Rock,ÊBlues","Blues Rock,ÊElectric Blues,ÊHarmonica Blues",1960's,"['Rock', 'ÊBlues']"
-195,196,1998,"Nuggets: Original Artyfacts From the First Psychedelic Era, 1965-1968",Various Artists,Rock,"Garage Rock,ÊPsychedelic Rock",1990's,['Rock']
+194,195,1966,"Blues Breakers With Eric Clapton (""The Beano Album"")",John Mayall & The Bluesbreakers,"Rock,ÃBlues","Blues Rock,ÃElectric Blues,ÃHarmonica Blues",1960's,"['Rock', 'Ã\x8aBlues']"
+195,196,1998,"Nuggets: Original Artyfacts From the First Psychedelic Era, 1965-1968",Various Artists,Rock,"Garage Rock,ÃPsychedelic Rock",1990's,['Rock']
 196,197,1983,Murmur,R.E.M.,Rock,Alternative Rock,1980's,['Rock']
 197,198,1967,The Best of Little Walter,Little Walter,Blues,Chicago Blues,1960's,['Blues']
 198,199,2001,Is This It,The Strokes,Rock,Indie Rock,2000's,['Rock']
@@ -357,7 +357,7 @@
 355,356,1970,12 Songs,Randy Newman,"Rock, Pop","Pop Rock, Vocal",1960's,"['Rock', 'Pop']"
 356,357,1967,Between the Buttons,The Rolling Stones,Rock,"Blues Rock, Psychedelic Rock, Pop Rock",1960's,['Rock']
 357,358,1960,Sketches of Spain,Miles Davis,Jazz,Modal,1950's,['Jazz']
-358,359,1972,Honky Chteau,Elton John,Rock,"Pop Rock,ÊClassic Rock",1970's,['Rock']
+358,359,1972,Honky ChÂteau,Elton John,Rock,"Pop Rock,ÃClassic Rock",1970's,['Rock']
 359,360,1979,Singles Going Steady,Buzzcocks,Rock,Punk,1970's,['Rock']
 360,361,2000,Stankonia,OutKast,"Hip Hop, Funk / Soul","Gangsta, P.Funk, Crunk, Conscious",1990's,"['Hip Hop', 'Funk', 'Soul']"
 361,362,1993,Siamese Dream,The Smashing Pumpkins,Rock,Alternative Rock,1990's,['Rock']
@@ -386,7 +386,7 @@
 384,385,2001,"""Love and Theft""",Bob Dylan,Rock,"Folk Rock, Blues Rock",2000's,['Rock']
 385,386,1974,Pretzel Logic,Steely Dan,"Jazz, Rock","Jazz-Rock, Pop Rock, Classic Rock",1970's,"['Jazz', 'Rock']"
 386,387,1993,Enter the Wu_Tang: 36 Chambers,Wu Tang Clan,Hip Hop,Gangsta,1990's,['Hip Hop']
-387,388,1985,The Indestructible Beat of Soweto,Various Artists,"Funk / Soul,ÊFolk, World, & Country",African,1980's,"['Funk', 'Soul', 'ÊFolk', 'World', 'Country']"
+387,388,1985,The Indestructible Beat of Soweto,Various Artists,"Funk / Soul,ÃFolk, World, & Country",African,1980's,"['Funk', 'Soul', 'Ã\x8aFolk', 'World', 'Country']"
 388,389,1989,The End of the Innocence,Don Henley,Rock,Pop Rock,1980's,['Rock']
 389,390,2003,Elephant,The White Stripes,Rock,"Blues Rock, Garage Rock, Alternative Rock",2000's,['Rock']
 390,391,1976,The Pretender,Jackson Browne,Rock,"Soft Rock, Pop Rock",1970's,['Rock']
@@ -419,7 +419,7 @@
 417,418,1973,Band on the Run,Paul McCartney & Wings,Rock,Pop Rock,1970's,['Rock']
 418,419,1994,Dummy,Portishead,Electronic,"Trip Hop, Downtempo",1990's,['Electronic']
 419,420,1957,"The ""Chirping"" Crickets",The Crickets,"Rock, Pop","Rockabilly, Rock & Roll",1950's,"['Rock', 'Pop']"
-420,421,1990,"The Best of the Girl Groups, Volume 1",Various Artists,"Rock,ÊPop","Pop Rock, Vocal",1980's,"['Rock', 'ÊPop']"
+420,421,1990,"The Best of the Girl Groups, Volume 1",Various Artists,"Rock,ÃPop","Pop Rock, Vocal",1980's,"['Rock', 'Ã\x8aPop']"
 421,422,1963,Presenting the Fabulous Ronettes Featuring Veronica,The Ronettes,"Rock, Pop","Rock & Roll, Vocal",1960's,"['Rock', 'Pop']"
 422,423,2001,Anthology,Diana Ross & The Supremes,"Electronic, Funk / Soul","Pop Rock, Soul, Disco",2000's,"['Electronic', 'Funk', 'Soul']"
 423,424,2002,The Rising,Bruce Springsteen,Rock,"Folk Rock, Classic Rock",2000's,['Rock']
@@ -445,9 +445,9 @@
 443,444,1972,The World Is a Ghetto,War,Funk / Soul,Funk,1970's,"['Funk', 'Soul']"
 444,445,1976,Fly Like an Eagle,Steve Miller Band,Rock,Pop Rock,1970's,['Rock']
 445,446,1970,Back in the USA,MC5,Rock,"Garage Rock, Rock & Roll",1960's,['Rock']
-446,447,1964,Getz / Gilberto,Stan GetzÊ/ÊJoao GilbertoÊfeaturingÊAntonio Carlos Jobim,Jazz,"Bossa Nova,ÊLatin Jazz",1960's,['Jazz']
+446,447,1964,Getz / Gilberto,Stan GetzÃ/ÃJoao GilbertoÃfeaturingÃAntonio Carlos Jobim,Jazz,"Bossa Nova,ÃLatin Jazz",1960's,['Jazz']
 447,448,1983,Synchronicity,The Police,"Rock, Pop","New Wave, Pop Rock",1980's,"['Rock', 'Pop']"
-448,449,1978,Third/Sister Lovers,Big Star,Rock,"Lo-Fi,ÊIndie Rock",1970's,['Rock']
+448,449,1978,Third/Sister Lovers,Big Star,Rock,"Lo-Fi,ÃIndie Rock",1970's,['Rock']
 449,450,1973,For Everyman,Jackson Browne,Rock,"Pop Rock, Classic Rock",1970's,['Rock']
 450,451,2006,Back to Black,Amy Winehouse,"Funk / Soul, Pop",Soul,2000's,"['Funk', 'Soul', 'Pop']"
 451,452,1971,John Prine,John Prine,"Folk, World, & Country","Country, Folk",1970's,"['Folk', 'World', 'Country']"

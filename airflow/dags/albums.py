@@ -1,10 +1,13 @@
 import pandas as pd
+import boto3
+import os
 
 
 class Albums(object):
 
     def __init__(self):
-        self.df = pd.read_csv('csvs/albumlist.csv', encoding="ISO-8859-1")
+        self.df = pd.read_csv(
+            'https://s3-us-west-1.amazonaws.com/rollingstonetop500/albumlist.csv', encoding="ISO-8859-1")
         self.df['Decade'] = self.df.apply(
             lambda row: self._add_decade(row), axis=1)
         self.df = self._normalize_genre()
@@ -45,3 +48,13 @@ class Albums(object):
         self.df['Normalized Genre'] = self.df['Normalized Genre'].map(
             lambda x: [i.strip() for i in x.split(',')])
         return self.df
+
+a = Albums()
+a.df.to_csv('airflow/dags/csvs/album_frame.csv')
+a.genres_by_years().to_csv('airflow/dags/csvs/genre.csv')
+# s3 = boto3.client('s3')
+# files = ['csvs/album_frame.csv', 'csvs/genre.csv']
+# bucket = os.environ['BUCKET']
+
+# for f in files:
+#     s3.upload_file(f, bucket, f)
