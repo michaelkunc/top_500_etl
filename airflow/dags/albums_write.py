@@ -9,7 +9,7 @@ from datetime import datetime, timedelta
 default_args = {
     'owner': 'airflow',
     'depends_on_past': False,
-    'start_date': datetime(2015, 6, 1),
+    'start_date': datetime(2017, 5, 14),
     'email': ['airflow@airflow.com'],
     'email_on_failure': False,
     'email_on_retry': False,
@@ -18,42 +18,37 @@ default_args = {
     # 'queue': 'bash_queue',
     # 'pool': 'backfill',
     # 'priority_weight': 10,
-    # 'end_date': datetime(2016, 1, 1),
+    'end_date': datetime(2017, 5, 20),
 }
 
 
-def write_album_frame():
+def write_local():
     a = albums.Albums()
-    return a.df.to_csv('airflow/dags/csvs/album_frame.csv')
+    a.df.to_csv('airflow/dags/csvs/album_frame.csv')
+    a.genres_by_years().to_csv('airflow/dags/csvs/genre.csv')
+    return "The album & genre frame have been written locally"
 
 
-dag = DAG('albums', default_args=default_args, schedule_interval=None)
+def write_s3():
+    s3 = boto3.client('s3')
+    files = ['airflow/dags/csvs/album_frame.csv',
+             'airflow/dags/csvs/genre.csv']
+    bucket = os.environ['BUCKET']
+    for f in files:
+        s3.upload_file(f, bucket, f)
+    return "The album & genre frame have been written to s3"
 
-# t1, t2 and t3 are examples of tasks created by instantiating operators
+
+dag = DAG('albums', default_args=default_args, schedule_interval='@once')
+
 t1 = PythonOperator(
-    task_id='write_album_frame',
-    python_callable=write_album_frame,
+    task_id='write_local',
+    python_callable=write_local,
     dag=dag)
 
-# t2 = BashOperator(
-#     task_id='sleep',
-#     bash_command='sleep 5',
-#     retries=3,
-#     dag=dag)
+t2 = PythonOperator(
+    task_id='write_s3',
+    python_callable=write_s3,
+    dag=dag)
 
-# templated_command = """
-#     {% for i in range(5) %}
-#         echo "{{ ds }}"
-#         echo "{{ macros.ds_add(ds, 7)}}"
-#         echo "{{ params.my_param }}"
-#     {% endfor %}
-# """
-
-# t3 = BashOperator(
-#     task_id='templated',
-#     bash_command=templated_command,
-#     params={'my_param': 'Parameter I passed in'},
-#     dag=dag)
-
-# t2.set_upstream(t1)
-# t3.set_upstream(t1)
+t2.set_upstream(t1)

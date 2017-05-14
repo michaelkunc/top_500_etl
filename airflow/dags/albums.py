@@ -49,9 +49,9 @@ class Albums(object):
             lambda x: [i.strip() for i in x.split(',')])
         return self.df
 
-a = Albums()
-a.df.to_csv('airflow/dags/csvs/album_frame.csv')
-a.genres_by_years().to_csv('airflow/dags/csvs/genre.csv')
+# a = Albums()
+# a.df.to_csv('airflow/dags/csvs/album_frame.csv')
+# a.genres_by_years().to_csv('airflow/dags/csvs/genre.csv')
 # s3 = boto3.client('s3')
 # files = ['csvs/album_frame.csv', 'csvs/genre.csv']
 # bucket = os.environ['BUCKET']
