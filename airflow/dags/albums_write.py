@@ -1,4 +1,4 @@
-import albums
+from etl_classes import albums
 import boto3
 import os
 from airflow import DAG
